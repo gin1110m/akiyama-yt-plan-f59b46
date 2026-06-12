@@ -63,6 +63,7 @@ section{padding:64px 0 8px}
 .sec-label .num{
   font-family:'Barlow Condensed',sans-serif;
   font-size:44px;font-weight:700;color:var(--accent);line-height:1;
+  flex:0 0 auto;white-space:nowrap;
 }
 .sec-label h2{
   font-size:28px;font-weight:900;letter-spacing:-0.02em;line-height:1.3;
@@ -290,11 +291,17 @@ section{padding:64px 0 8px}
   display:flex;align-items:center;justify-content:center;
 }
 .video ol.steps li strong{color:var(--ink);font-weight:700}
-.video .thumb-note{
-  margin-top:14px;font-size:13.5px;font-weight:500;color:var(--ink-soft);
-  background:var(--paper);padding:10px 14px;
+.video .thumb{margin-top:16px}
+.tbox{
+  aspect-ratio:16/9;width:100%;max-width:300px;
+  background:#0d0d0f;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:4px;text-align:center;padding:12px 10px;
 }
-.video .thumb-note strong{color:var(--ink);font-weight:900}
+.tbox .tl-s{color:#fff;font-weight:900;font-size:14px;line-height:1.3}
+.tbox .tl-g{color:#e9b941;font-weight:900;font-size:24px;line-height:1.25;letter-spacing:-0.01em}
+.tbox .tl-xs{color:rgba(255,255,255,.85);font-weight:700;font-size:11px;margin-top:2px}
+.tcap{font-size:12.5px;font-weight:500;color:var(--ink-soft);margin-top:8px;max-width:300px}
 .evidence{
   background:var(--accent-soft);
   padding:12px 16px;margin-top:14px;
@@ -480,15 +487,14 @@ footer{
 </nav>
 <header class="hero">
 <div class="wrap">
-<div class="date en">2026.06.12 — GINPEI → AKIYAMA</div>
 <h1><span class="thin">秋山さん​ YouTubeチャンネル</span>撮影提案書</h1>
-<p class="intro">昨日​お話しした​通り、​タイトルと​内容を​一通り仮説で​組みました。<strong>​小林さんの​チャンネル48本の​解析と​セミナーの​型</strong>が​ベースです。</p>
+<p class="intro">タイトルと​内容を​一通り仮説で​組んだ。​ベースは<strong>​小林さんの​チャンネル48本の​解析＋セミナーの​型</strong>。</p>
 </div>
 </header>
 <section id="map">
 <div class="wrap">
 <div class="sec-label reveal"><span class="num en">01</span><h2>全体​マップ — 5本が​どう​商談に​つながるか</h2></div>
-<p class="sec-lead reveal">集客用4本​（①〜④）が​入口、​サービス説明1本​（⑤）が<strong>​全動画の​終着点</strong>です。​どの​動画から​入っても、​最後は​⑤と​LINEに​流れる​構造にします。</p>
+<p class="sec-lead reveal">集客用4本​（①〜④）が​入口、​サービス説明1本​（⑤）が<strong>​全動画の​終着点</strong>。​どの​動画から​入っても、​最後は​⑤と​LINEに​流れる​構造。</p>
 <div class="map-board reveal">
 <div class="map-row-label">集客用 4本​（入口）</div>
 <div class="vgrid">
@@ -546,26 +552,26 @@ footer{
 <div class="darrow"></div>
 <div class="dnode final">CMO代行・事業責任者代行の​商談</div>
 </div>
-<div class="map-note">公開順は<strong>​①→②→③→④→⑤</strong>。​3〜4日に​1本の​ペースで​初月に​出し切ります。</div>
+<div class="map-note">公開順は<strong>​①→②→③→④→⑤</strong>。​3〜4日に​1本の​ペースで​初月に​出し切る。</div>
 </div>
 </div>
 </section>
 <section id="theme">
 <div class="wrap">
-<div class="sec-label reveal"><span class="num en">02</span><h2>設計の​軸 — テーマと​商品を​はっきり分けます</h2></div>
+<div class="sec-label reveal"><span class="num en">02</span><h2>設計の​軸 — テーマと​商品を​はっきり分ける</h2></div>
 <div class="split reveal">
 <div class="box">
 <div class="bh">動画の​テーマ​（集める​素材）</div>
 <div class="bb">
 <div class="big">AI × 経営・営業</div>
-<p>参考チャンネルで​再生・問い​合わせが​集中している​領域です。</p>
+<p>参考チャンネルで​再生・問い​合わせが​集中している​領域。</p>
 </div>
 </div>
 <div class="box">
 <div class="bh">売る​もの​（商品）</div>
 <div class="bb">
 <div class="big">CMO代行・事業責任者代行</div>
-<p>実績と​単価が​ある​本業に​絞ります。​AIツールの​解説や​代行は​売りません。</p>
+<p>実績と​単価が​ある​本業に​絞る。​AIツールの​解説・代行は​売らない。</p>
 </div>
 </div>
 </div>
@@ -574,7 +580,7 @@ footer{
 <section id="videos">
 <div class="wrap">
 <div class="sec-label reveal"><span class="num en">03</span><h2>初回撮影で​撮る​5本の​中身</h2></div>
-<p class="sec-lead reveal">各本A4 1枚の​「話す順番メモ」は​こちらで​用意します。</p>
+<p class="sec-lead reveal">各本A4 1枚の​「話す順番メモ」は​こちらで​用意。</p>
 <!-- 動画① -->
 <div class="video reveal">
 <div class="vh">
@@ -588,13 +594,21 @@ footer{
 <div class="vbody">
 <div class="vmeta">
 <h4>狙い</h4>
-<p class="aim">視聴者の​AI観を​「ツールの​話」から<strong>​「売上の​構造の​話」</strong>に​置き換える​基準動画。​以降の​動画が​全部​ここに​接続します。</p>
+<p class="aim">視聴者の​AI観を​「ツールの​話」から<strong>​「売上の​構造の​話」</strong>に​置き換える​基準動画。​以降の​動画は​全部​ここに​接続。</p>
 <h4>タイトル案</h4>
 <ul class="titles">
 <li>経営者の​ための​AI活用【完全版​】｜一番​お金が​動くのは​「営業」だった</li>
 <li>通帳40万円の​会社を​月商1億に​した​COOが​語る、​経営者の​ための​AI活用【完全版​】</li>
 </ul>
-<div class="thumb-note"><strong>サムネ:</strong> 黒背景・​白文字・金1色。​「経営者の​ための​ AI活用【完全版】」​＋小さく​「主役は​"営業"」。​ツールの​ロゴや​操作画面は​出しません。</div>
+<div class="thumb">
+<h4>サムネ案</h4>
+<div class="tbox">
+<span class="tl-s">経営者の​ための</span>​
+<span class="tl-g">AI活用【完全版​】</span>
+<span class="tl-xs">主役は​"営業"</span>
+</div>
+<div class="tcap">黒背景・​白文字・金1色。​ツールロゴ・操作画面は​出さない</div>
+</div>
 </div>
 <div class="vflow">
 <h4>話す​流れ​（7章）</h4>
@@ -623,24 +637,31 @@ footer{
 <div class="vbody">
 <div class="vmeta">
 <h4>狙い</h4>
-<p class="aim">問い​合わせを​取りに​行く回。<strong>​参考チャンネルの​最高再生​（4,593回）</strong>も、​この​「具体的な​ソリューションを​見せる」型でした。</p>
+<p class="aim">問い​合わせを​取りに​行く回。<strong>​参考チャンネルの​最高再生​（4,593回）</strong>も、​この​「具体的な​ソリューションを​見せる」​型だった。</p>
 <h4>タイトル案</h4>
 <ul class="titles">
 <li>営業の​前工程を​AIに​全部​任せたら​何が​起きたか​｜リスト作成から​アポ打診まで​全手​順</li>
 <li>（撮影までに​アポ実績が​出ていれば）​AIで​◯◯の​アポが​取れた​｜営業の​前工程を​全自​動化した​全手​順</li>
 </ul>
-<div class="thumb-note"><strong>サムネ:</strong> 黒背景・​「営業の​前工程 全自動化」​＋数字を​大きく。</div>
+<div class="thumb">
+<h4>サムネ案</h4>
+<div class="tbox">
+<span class="tl-s">営業の​前工程</span>
+<span class="tl-g">全自動化</span>
+</div>
+<div class="tcap">実数が​出たら​アポ数等の​数字を​大きく​追加</div>
+</div>
 </div>
 <div class="vflow">
 <h4>話す​流れ</h4>
 <ol class="steps">
 <li><strong>フック:</strong>​「テレアポも、​営業の​人海戦術も、​もう​使っていません」</li>
-<li>求人媒体経由の​DMで​成約を​積ん​できた​手法の​紹介​（実数は​公開範囲を​相談させてください）</li>
+<li>求人媒体経由の​DMで​成約を​積ん​できた​手法の​紹介​（実数の​公開範囲は​要相談）</li>
 <li>その前工程を​AIで​自動化した​中身: リスト収集→1社ごとの​企業リサーチ→個別提案文の​量産→送付・追跡</li>
 <li>工数と​コストの​変化量​（手作業比で​どれだけ​浮くか）</li>
 <li>「どの​業種の​どこから​自動化すると​一番​効くかは​会社ごとに​違う」→LINE案内</li>
 </ol>
-<div class="evidence"><strong>進め方の​提案:</strong> この​動画は​「自社で​実際に​回している」と​言えるのが​一番​強いので、​いま回している​営業自動化の​結果​（送付数・返信・アポ）が​1つでも​出た​時点の<strong>​実数で​タイトルと​中身を​確定</strong>させたいです。​撮影日までに​数字を​作りに​いきます。</div>
+<div class="evidence"><strong>進め方​:</strong>​「自社で​実際に​回している」と​言えるのが​一番強い。​いま回している​営業自動化の​結果​（送付数・返信・アポ）が​出た​時点の<strong>​実数で​タイトルと​中身を​確定</strong>。​撮影日までに​数字を​作りに​いく。</div>
 </div>
 </div>
 </div>
@@ -657,13 +678,19 @@ footer{
 <div class="vbody">
 <div class="vmeta">
 <h4>狙い</h4>
-<p class="aim">「ツールを​入れたのに​変わらなかった」​経営者に<strong>​リストを​絞る</strong>​回です。</p>
+<p class="aim">「ツールを​入れたのに​変わらなかった」​経営者に<strong>​リストを​絞る</strong>回。</p>
 <h4>タイトル案</h4>
 <ul class="titles">
 <li>ChatGPTを​社員に​配っても​売上が​増えない​本当の​理由</li>
 <li>AI導入で​失敗する​会社の​共通点3つ</li>
 </ul>
-<div class="thumb-note"><strong>サムネ:</strong> 黒背景・​「ChatGPT配っても​ 売上は​増えない」。</div>
+<div class="thumb">
+<h4>サムネ案</h4>
+<div class="tbox">
+<span class="tl-s">ChatGPT配っても</span>​
+<span class="tl-g">売上は​増えない</span>​
+</div>
+</div>
 </div>
 <div class="vflow">
 <h4>話す​流れ</h4>
@@ -689,13 +716,19 @@ footer{
 <div class="vbody">
 <div class="vmeta">
 <h4>狙い</h4>
-<p class="aim">指名検索の​受け皿。​DM・紹介で​秋山さんを​知った​経営者が<strong>​商談前に​見る​1本</strong>です。</p>
+<p class="aim">指名検索の​受け皿。​DM・紹介で​秋山さんを​知った​経営者が<strong>​商談前に​見る​1本</strong>。</p>
 <h4>タイトル案</h4>
 <ul class="titles">
 <li>通帳残高40万円の​会社を、​1年で​月商1億に​した​話</li>
 <li>COOと​して​入った​会社で​最初の​90日に​やった​こと｜通帳40万円→月商1億</li>
 </ul>
-<div class="thumb-note"><strong>サムネ:</strong> 黒背景・​「40万円→月商1億」の​数字を​大きく。</div>
+<div class="thumb">
+<h4>サムネ案</h4>
+<div class="tbox">
+<span class="tl-s">通帳残高</span>
+<span class="tl-g">40万円→月商1億</span>
+</div>
+</div>
 </div>
 <div class="vflow">
 <h4>話す​流れ</h4>
@@ -703,7 +736,7 @@ footer{
 <li>入社時の​状態（通帳残高40万円・組織の​実情）</li>
 <li>最初に​変えた​判断3つ​（何を​止め、​何に​集中したか）</li>
 <li>伸びた​構造の​種明かし​（商品検証の​回し方​・KPIの​絞り方）</li>
-<li><strong>その後の​衰退から​学んだ​こと</strong>​（ここを​正直に​話すのが​信頼に​なります）</li>
+<li><strong>その後の​衰退から​学んだ​こと</strong>​（正直に​話すのが​信頼に​なる）</li>
 <li>「この​経験が​今の​代行業の​判断の​土台」​→LINE案内</li>
 </ol>
 </div>
@@ -722,13 +755,20 @@ footer{
 <div class="vbody">
 <div class="vmeta">
 <h4>狙い</h4>
-<p class="aim"><strong>全動画の​終着点に​なる​サービス概要動画</strong>。​概要欄・LINE・商談前送付を​この​1本に​集約します。</p>
-<h4>タイトル案​（サービス名ではなく、​悩みから​入ります）</h4>
+<p class="aim"><strong>全動画の​終着点に​なる​サービス概要動画</strong>。​概要欄・LINE・商談前送付を​この​1本に​集約。</p>
+<h4>タイトル案​（サービス名ではなく​悩みから​入る）</h4>
 <ul class="titles">
 <li>年収1,000万円で​CMOを​採用する​前に​見て​ほしい​話｜外部の​事業責任者と​いう​選択肢</li>
 <li>マーケ責任者の​採用に​失敗する​会社の​共通点と、​僕が​「代行」で​入っている​理由</li>
 </ul>
-<div class="thumb-note"><strong>サムネ:</strong> 黒背景・​「CMO採用の​前に」など​悩み側の​言葉を​大きく。</div>
+<div class="thumb">
+<h4>サムネ案</h4>
+<div class="tbox">
+<span class="tl-s">年収1,000万円で</span>​
+<span class="tl-g">CMO採用の​前に</span>​
+</div>
+<div class="tcap">悩み側の​言葉を​大きく</div>
+</div>
 </div>
 <div class="vflow">
 <h4>話す​流れ</h4>
@@ -737,8 +777,8 @@ footer{
 <li>なぜ​起きるか​（求める​人材の​市場相場と​採用リスクの​構造）</li>
 <li><strong>選択肢の​比較:</strong> 正社員CMO採用／代理店／コンサル／事業責任者代行</li>
 <li>代行の​中身: 何を​どこまで​やるか・​入り方​・​進め方​・実例​（匿名）</li>
-<li>合う​会社・合わない​会社​（正直に​言う​ことで​信頼が​立ちます）</li>
-<li>料金の​話​（どこまで​言うかは​確認事項で​相談させてください）</li>
+<li>合う​会社・合わない​会社​（正直に​言う​ことで​信頼が​立つ）</li>
+<li>料金の​話​（どこまで​言うかは​確認事項3で）</li>
 <li>問い​合わせ方​法の​案内</li>
 </ol>
 </div>
@@ -746,14 +786,14 @@ footer{
 </div>
 <div class="supple reveal">
 <h3>補足: お客様の​声動画に​ついて</h3>
-<p>守秘の​関係で​初期は​見送り、<strong>​出演OKの​クライアントが​出た​段階で​第2弾撮影に​組み込む想定</strong>です​（対談形式・スマホ撮影で​十分）。</p>
+<p>守秘の​関係で​初期は​見送り、<strong>​出演OKの​クライアントが​出た​段階で​第2弾撮影に​組み込む想定</strong>​（対談形式・スマホ撮影で​十分）。</p>
 </div>
 </div>
 </section>
 <section id="shoot">
 <div class="wrap">
 <div class="sec-label reveal"><span class="num en">04</span><h2>撮影当日の​段取り</h2></div>
-<p class="sec-lead reveal">「軽い​機材で​一発撮り・70点で​さっさと​出す」方​式です。</p>
+<p class="sec-lead reveal">「軽い​機材で​一発撮り・70点で​さっさと​出す」方式。</p>
 <div class="shoot reveal">
 <div class="scard">
 <div class="sh">所要時間</div>
@@ -761,23 +801,23 @@ footer{
 </div>
 <div class="scard">
 <div class="sh">場所</div>
-<div class="sb">静かで​明るい​場所で​あれば​OK​（オフィス・レンタルスペース等）。​背景に​品が​あれば​十分です。</div>
+<div class="sb">静かで​明るい​場所なら​OK​（オフィス・レンタルスペース等）。​背景に​品が​あれば​十分。</div>
 </div>
 <div class="scard">
 <div class="sh">機材</div>
-<div class="sb">スマホ4K＋ピンマイク＋三脚で​成立します。<strong>​音質だけは​ピンマイク必須。</strong>​手配は​こちらで​やります。</div>
+<div class="sb">スマホ4K＋ピンマイク＋三脚で​成立​（<strong>音質だけは​ピンマイク必須</strong>）。​手配は​こちら。</div>
 </div>
 <div class="scard">
 <div class="sh">服装</div>
-<div class="sb">ジャケット推奨。<strong>​本ごとに​上だけ​替える</strong>と​「同日まとめ撮り感」が​消えます。</div>
+<div class="sb">ジャケット推奨。<strong>​本ごとに​上だけ​替える</strong>と​「同日まとめ撮り感」が​消える。</div>
 </div>
 <div class="scard">
 <div class="sh">台本</div>
-<div class="sb"><strong>書きません。​一発​撮りです。</strong>​各本A4 1枚の​「話す順番メモ」を​こちらで​用意するので、​それを​見ながら​普段の​言葉で​話してください。</div>
+<div class="sb"><strong>書かない。​一発撮り。</strong>​各本A4 1枚の​「話す順番メモ」を​見ながら​普段の​言葉で。</div>
 </div>
 <div class="scard">
 <div class="sh">品質基準</div>
-<div class="sb"><strong>70点で​さっさと​出す方針</strong>です。​言い直し・詰まりは​編集で​全部​消えます。</div>
+<div class="sb"><strong>70点で​さっさと​出す。</strong>​言い直し・詰まりは​編集で​全部​消える。</div>
 </div>
 </div>
 </div>
@@ -785,7 +825,7 @@ footer{
 <section id="ops">
 <div class="wrap">
 <div class="sec-label reveal"><span class="num en">05</span><h2>公開後の​運用</h2></div>
-<p class="sec-lead reveal">撮影日を​起点に、​3〜4日に​1本の​ペースで​初月5本を​出し切ります。</p>
+<p class="sec-lead reveal">撮影日を​起点に、​3〜4日に​1本の​ペースで​初月5本を​出し切る。</p>
 <div class="timeline-wrap reveal">
 <h4 style="font-size:13px;font-weight:900;color:var(--accent);letter-spacing:.1em;margin-bottom:14px">公開スケジュール​（初月）</h4>
 <div class="timeline">
@@ -796,16 +836,16 @@ footer{
 <div class="tnode"><div class="dot en">④</div><div class="tl">40万→1億</div><div class="ts">権威・指名検索</div></div>
 <div class="tnode goal"><div class="dot en">⑤</div><div class="tl">サービス概要</div><div class="ts">概要欄の​最上部に​常設</div></div>
 </div>
-<p style="font-size:13px;font-weight:500;color:var(--ink-soft);margin-top:16px">2本目公開後に​データ​（視聴維持・流入元）を​見て​微調整します。</p>
+<p style="font-size:13px;font-weight:500;color:var(--ink-soft);margin-top:16px">2本目公開後に​データ​（視聴維持・流入元）を​見て​微調整。</p>
 </div>
 <div class="opsgrid reveal">
 <div class="opcard">
 <div class="oh"><span class="tag">導線</span>全動​画 → 公式LINE</div>
-<div class="ob">全動画の​末尾と​概要欄から、<strong>​稼働中の​公式LINE</strong>​（特典​「経営者の​業務改善プロンプト10選」）へ。​登録後は​秋山さんから​個別連絡。​⑤公開後は​概要欄の​最上部に​⑤を​常設します。</div>
+<div class="ob">全動画の​末尾と​概要欄から、<strong>​稼働中の​公式LINE</strong>​（特典​「経営者の​業務改善プロンプト10選」）へ。​登録後は​秋山さんから​個別連絡。​⑤公開後は​概要欄の​最上部に​⑤を​常設。</div>
 </div>
 <div class="opcard">
 <div class="oh"><span class="tag">営業連動</span>商談前に​動画を​送る</div>
-<div class="ob">問い​合わせ・商談の​前に<strong>​⑤＋関連1本を​送る​運用</strong>にします。​営業DMの​署名・プロフィールにも​チャンネルを​置きます。</div>
+<div class="ob">問い​合わせ・商談の​前に<strong>​⑤＋関連1本を​送る</strong>。​営業DMの​署名・プロフィールにも​チャンネルを​置く。</div>
 </div>
 <div class="xloop">
 <div class="oh"><span class="tag" style="background:var(--accent)">X展開</span>動画 → 長文X記事への​変換</div>
@@ -818,23 +858,23 @@ footer{
 <div class="xarrow">→</div>
 <div class="xstep"><div class="xnum en">月+300人</div><div class="xt">LINE登録</div><div class="xs">小林さんの​実数</div></div>
 </div>
-<div class="xnote">秋山さんの​Xは​今こちらで​運用しているので、<strong>​撮影した​瞬間から​この​仕組みに​乗せられます</strong>。​ショート切り​抜きも​併用します。</div>
+<div class="xnote">秋山さんの​Xは​今こちらで​運用中。<strong>​撮影した​瞬間から​この​仕組みに​乗る</strong>。​ショート切り​抜きも​併用。</div>
 </div>
 <div class="opcard">
 <div class="oh"><span class="tag">計測</span>見る​数字を​3つに​絞る</div>
-<div class="ob">見るのは​再生数ではなく、<strong>​LINE登録数・問い​合わせ数・商談化数</strong>です。​月次で​まとめて​共有します。</div>
+<div class="ob">見るのは​再生数ではなく<strong>​LINE登録数・問い​合わせ数・商談化数</strong>。​月次で​共有。</div>
 </div>
 <div class="opcard">
 <div class="oh"><span class="tag">ペース</span>3〜4日に​1本</div>
-<div class="ob">初月で​5本。​公開作業・サムネ・概要欄は​こちらで​行います。</div>
+<div class="ob">初月で​5本。​公開作業・サムネ・概要欄は​こちら。</div>
 </div>
 </div>
 </div>
 </section>
 <section id="confirm">
 <div class="wrap">
-<div class="sec-label reveal"><span class="num en">06</span><h2>確認させてください</h2></div>
-<p class="sec-lead reveal">これだけ返して​もらえれば​動けます。</p>
+<div class="sec-label reveal"><span class="num en">06</span><h2>確認事項</h2></div>
+<p class="sec-lead reveal">返事が​要るのは​この​4点だけ。</p>
 <div class="confirm reveal">
 <div class="ccard">
 <div class="ch"><span class="cn en">1</span><span class="ct">5本の​ラインナップと​タイトルの​方​向</span></div>
@@ -842,19 +882,19 @@ footer{
 </div>
 <div class="ccard">
 <div class="ch"><span class="cn en">2</span><span class="ct">撮影日の​候補</span></div>
-<div class="cb"><strong>半日いただける​日</strong>を​いく​つかください。​最短で​合わせます。​場所の​当てがなければ​こちらで​探します。</div>
+<div class="cb"><strong>半日取れる​日の​候補</strong>を​いくつか。​場所の​当てがなければ​こちらで​探す。</div>
 </div>
 <div class="ccard">
 <div class="ch"><span class="cn en">3</span><span class="ct">⑤で​料金を​どこまで​話すか</span></div>
-<div class="cb">価格まで​明言するか、​相談ベースに​留めるか。<strong>​秋山さんの​商習慣に​合わせます。</strong></div>
+<div class="cb">価格まで​明言するか、​相談ベースに​留めるか。<strong>​商習慣に​合わせる。</strong></div>
 </div>
 <div class="ccard">
 <div class="ch"><span class="cn en">4</span><span class="ct">実績数値の​公開範囲</span></div>
-<div class="cb">HPに​載せている​範囲​（通帳40万→月商1億 等）で​組んでいます。​②で​「求人媒体DMで​成約してきた​手法」の​話を<strong>​どこまで​出すか</strong>だけ​相談させてください。</div>
+<div class="cb">HPに​載せている​範囲​（通帳40万→月商1億 等）で​組んでいる。​②の​「求人媒体DM」の​話を<strong>​どこまで​出すか</strong>だけ要確認。</div>
 </div>
 </div>
 <div class="closing reveal">
-<p>修正・差し替えは​何でも​言ってください。<strong>​OKを​もらえたら​撮影日を​確定して、​各本の​話す順番メモの​作成に​入ります。</strong></p>
+<p>修正・差し替えは​何でも。<strong>​OKが​出たら​撮影日を​確定して、​各本の​話す順番メモの​作成に​入る。</strong></p>
 </div>
 </div>
 </section>
