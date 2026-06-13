@@ -174,6 +174,42 @@ section{padding:64px 0 8px}
 }
 .map-note strong{font-weight:900;color:var(--navy)}
 
+/* ===== 成功モデル対応表（TTP map） ===== */
+.modelmap{margin-top:34px;border:1px solid var(--line);background:var(--white);overflow:hidden}
+.modelmap .mm-cap{
+  background:var(--navy);color:#fff;font-size:16px;font-weight:900;
+  padding:14px 18px;letter-spacing:.01em;
+}
+.modelmap .mm-lead{padding:15px 18px 2px;font-size:14px;font-weight:500;color:var(--ink-soft);line-height:1.7}
+.modelmap .mm-lead strong{color:var(--ink);font-weight:700}
+.mm-row{display:grid;grid-template-columns:118px 1.05fr 1.3fr;border-top:1px solid var(--line)}
+.mm-row.is-head .c{background:var(--accent-soft);color:var(--navy);font-weight:900;font-size:13px;padding:11px 16px}
+.mm-row .c{padding:15px 16px;font-size:14px;font-weight:500;color:var(--ink-soft);line-height:1.65}
+.mm-row .c.book{font-weight:900;color:var(--navy);font-size:15px}
+.mm-row .c.src{color:var(--ink);font-weight:700}
+.mm-row .c.src b{color:var(--accent);font-weight:900}
+.mm-row .c.src .v{display:block;margin-top:4px;font-size:12.5px;font-weight:900;color:var(--accent);letter-spacing:.02em}
+.mm-row .c.ttp b{color:var(--navy);font-weight:900}
+@media(max-width:640px){
+  .mm-row{grid-template-columns:1fr}
+  .mm-row.is-head{display:none}
+  .mm-row .c{border-top:1px solid var(--line);padding:11px 15px}
+  .mm-row .c.book{background:var(--accent-soft);border-top:0;font-size:14.5px;padding:11px 15px}
+  .mm-row .c.src::before{content:"成功モデル：";display:block;font-weight:900;color:var(--navy);font-size:12px;margin-bottom:3px}
+  .mm-row .c.ttp::before{content:"TTPする型：";display:block;font-weight:900;color:var(--navy);font-size:12px;margin-bottom:3px}
+}
+
+/* ===== 各本の成功モデル行 ===== */
+.vmeta .model{
+  margin:10px 0 6px;padding:13px 15px;background:var(--accent-soft);
+  font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.7;
+}
+.vmeta .model .ml{
+  display:inline-block;font-weight:900;color:#fff;background:var(--accent);
+  font-size:11.5px;padding:3px 9px;margin-right:9px;letter-spacing:.05em;vertical-align:1px;
+}
+.vmeta .model b{color:var(--navy);font-weight:900}
+
 /* ===== theme split ===== */
 .split{
   display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px;
@@ -500,7 +536,7 @@ footer{
 <header class="hero">
 <div class="wrap">
 <h1><span class="thin">秋山さん​ YouTubeチャンネル</span>撮影提案書</h1>
-<p class="intro">タイトルと​内容を​一通り仮説で​組んだ。​ベースは<strong>​小林さんの​チャンネル48本の​解析＋セミナーの​型</strong>。</p>
+<p class="intro">タイトルと​内容を​一通り仮説で​組んだ。​ベースは<strong>​小林さんの​チャンネル48本の​解析＋セミナーの​型</strong>。​5本とも<strong>​小林さんの​実在の​成功動画を​下敷き​（成功モデル）</strong>に​している。​どの​動画を​なぞるかは​下の​対応表と​各本の​「成功モデル」に​明記した。</p>
 </div>
 </header>
 <section id="map">
@@ -566,6 +602,40 @@ footer{
 </div>
 <div class="map-note">公開順は<strong>​①→②→③→④→⑤</strong>。​3〜4日に​1本の​ペースで​初月に​出し切る。</div>
 </div>
+<div class="modelmap reveal">
+<div class="mm-cap">5本の​成功モデル — 小林chの​どれを​TTPするか</div>
+<p class="mm-lead">5本とも​小林さんの<strong>​実在の​動画を​下敷き</strong>に​している。​何を​パクるかを​1本ずつ明確に​した​（再生数は​解析時点の​実数）。</p>
+<div class="mm-row is-head">
+<div class="c">本</div>
+<div class="c">下敷きに​する​小林の​動画</div>
+<div class="c">何を​TTPするか</div>
+</div>
+<div class="mm-row">
+<div class="c book">① 完全版</div>
+<div class="c src"><b>#2</b>「上場企業に​3.5億で​M&amp;Aした​“魔法の​公式”」<span class="v">​2,483回</span></div>
+<div class="c ttp">型・全体​像を​出し切り、<b>​“自社への​当てはめ”だけLINEに​残す​「完全版​→個別相談」</b>の​構造。​AI×経営の​中身の​語り口は​ #37・#25 を​参照。</div>
+</div>
+<div class="mm-row">
+<div class="c book">② 営業の​主砲</div>
+<div class="c src"><b>#40</b>​「Claude Codeで​営業を​全自​動化したら​1週間で​上場企業と​契約」<span class="v">​4,593回＝ch最高再生</span></div>
+<div class="c ttp">AIで​営業を​全自​動化した​仕組みを、<b>​リスト作成→DM→アポ準備→フォローまで​一気通貫で​全公開</b>する型。​ch史上いちばん外部に​刺さった​動画。</div>
+</div>
+<div class="mm-row">
+<div class="c book">③ ふるい​落とし</div>
+<div class="c src"><b>#36</b>​「その​仕事は​AIに​消される​（LINE構築の​現実）」<span class="v">​2,116回</span></div>
+<div class="c ttp"><b>「ツール​その​ものに​価値は​ない​・残るのは​構造と​設計」</b>と​いう​逆説×不安フック。​中央値​（約300〜500回）の​5倍に​伸びた型。</div>
+</div>
+<div class="mm-row">
+<div class="c book">④ 権威・受け皿</div>
+<div class="c src"><b>#15</b>​「ゼロから​3.5億M&amp;Aまでの​全工程」​（279回）​＋<b>#1</b>​「3.5億売却の​リアルな​過程」<span class="v">​709回</span></div>
+<div class="c ttp">原点を、​失敗・停滞も​含めて​語り切る<b>​「自己神話」型</b>。​※バズ回ではなく​商談前に​信頼を​固める​受け皿。​小林も​神話回は​中位再生で、​数字を​伸ばすのは​AI回​（②③）。</div>
+</div>
+<div class="mm-row">
+<div class="c book">⑤ サービス説明</div>
+<div class="c src"><b>#3</b>​「KUROMAKUビジネス全貌」<span class="v">​637回</span></div>
+<div class="c ttp">価格・対象・<b>“向かない​人”まで​全部​出して​事前に​ふるいに​かける</b>​サービス概要動画の​型。​“概要動画を​1本持て​”自体も​ #29・#34 で​小林が​明言。</div>
+</div>
+</div>
 </div>
 </section>
 <section id="theme">
@@ -607,6 +677,7 @@ footer{
 <div class="vmeta">
 <h4>狙い</h4>
 <p class="aim">視聴者の​AI観を​「ツールの​話」から<strong>​「売上の​構造の​話」</strong>に​置き換える​基準動画。​以降の​動画は​全部​ここに​接続。</p>
+<p class="model"><span class="ml">成功モデル</span><b>#2​「3.5億M&amp;Aの​“魔法の​公式”」​（2,483回）</b>。​型を​全部​見せ切り、​“自社への​当てはめ”だけLINEに​残す​「完全版​→個別相談」​構造を​そのまま​なぞる。​中身の​語り口は​ #37・#25 を​下敷きに。</p>
 <h4>タイトル案</h4>
 <ul class="titles">
 <li>経営者の​ための​AI活用【完全版​】｜一番​お金が​動く​場所から​順に​話します</li>
@@ -652,7 +723,8 @@ footer{
 <div class="vbody">
 <div class="vmeta">
 <h4>狙い</h4>
-<p class="aim">問い​合わせを​取りに​行く回。<strong>​参考チャンネルの​最高再生​（4,593回）</strong>も、​この​「具体的な​ソリューションを​見せる」​型だった。</p>
+<p class="aim">問い​合わせを​取りに​行く​主砲。<strong>​「具体的な​ソリューションを​丸ごと​見せる」</strong>型。</p>
+<p class="model"><span class="ml">成功モデル</span><b>#40​「Claude Codeで​営業を​全自​動化したら​1週間で​上場企業と​契約」​（4,593回＝ch最高再生）</b>。​AIで​営業を​全自​動化した​仕組みを、​リスト作成→DM→アポ準備→フォローまで​一気通貫で​全公開する​型を、​秋山さんの​自社実数でなぞる。</p>
 <h4>タイトル案</h4>
 <ul class="titles">
 <li>営業の​入口を​ぜんぶAIに​任せたら​何が​起きたか​｜リスト作成から​アポ打診まで​全手​順</li>
@@ -698,6 +770,7 @@ footer{
 <div class="vmeta">
 <h4>狙い</h4>
 <p class="aim">「ツールを​入れたのに​変わらなかった」​経営者に<strong>​リストを​絞る</strong>回。</p>
+<p class="model"><span class="ml">成功モデル</span><b>#36​「その​仕事は​AIに​消される」​（2,116回）</b>。​「ツール​その​ものに​価値は​ない​・残るのは​構造と​設計」と​いう​逆説×不安フックの​型。​中央値の​約5倍に​伸びた​回を​なぞる。</p>
 <h4>タイトル案</h4>
 <ul class="titles">
 <li>ChatGPTを​社員に​配った​会社の​9割で​起きている​こと｜成果が​出ない​会社の​共通点</li>
@@ -740,6 +813,7 @@ footer{
 <div class="vmeta">
 <h4>狙い</h4>
 <p class="aim">指名検索の​受け皿。​DM・紹介で​秋山さんを​知った​経営者が<strong>​商談前に​見る​1本</strong>。</p>
+<p class="model"><span class="ml">成功モデル</span><b>#15​「ゼロから​3.5億M&amp;Aまでの​全工程」​（279回）​＋#1​（709回）</b>。​原点を​失敗・停滞も​含めて​語り切る​「自己神話」型。​※バズ回ではなく​商談前に​信頼を​固める​受け皿​（小林も​神話回は​中位再生で、​数字を​伸ばすのは​AI回）。</p>
 <h4>タイトル案</h4>
 <ul class="titles">
 <li>通帳残高40万円の​会社を、​1年で​月商1億に​した​話</li>
@@ -783,6 +857,7 @@ footer{
 <div class="vmeta">
 <h4>狙い</h4>
 <p class="aim"><strong>全動画の​終着点に​なる​サービス概要動画</strong>。​概要欄・LINE・商談前送付を​この​1本に​集約。</p>
+<p class="model"><span class="ml">成功モデル</span><b>#3​「KUROMAKUビジネス全貌」​（637回）</b>。​価格・対象・“向かない​人”まで​全部​出して​事前に​ふるいに​かける型。​“概要動画を​1本持て​”自体も​ #29・#34 で​小林が​明言している。</p>
 <h4>タイトル案​（サービス名ではなく​悩みから​入る）</h4>
 <ul class="titles">
 <li>CMOや​マーケ責任者の​採用で​失敗する​前に​｜「外部の​事業責任者」と​いう​選択肢</li>
